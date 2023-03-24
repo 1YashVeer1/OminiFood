@@ -1,0 +1,127 @@
+var output=[];
+var count=1;
+function fizzBuzz(){
+while(count<=100){
+if(count%3==0 && count%5==0){
+output.push("fizzBuzz");
+}else if(count%3==0){
+output.push("fizz");
+}else if(count%5==0){
+output.push("buzz");
+}
+else{
+output.push(count);
+}
+count++;
+}
+console.log(output);
+
+}
+
+/////
+
+var output=[];
+function fizzBuzz(){
+for(var count=1;count<=100;count++){
+if(count%3==0 && count%5==0){
+output.push("fizzBuzz");
+}else if(count%3==0){
+output.push("fizz");
+}else if(count%5==0){
+output.push("buzz");
+}
+else{
+output.push(count);
+}
+}
+console.log(output);
+
+}
+
+// while loop is for state , the condition is true then only loop will be execute.
+// for loop is for iteration.
+
+task = factorial of a number , fabonacci series of given number.
+tool = html tree generator.
+
+document
+document.firstElementChild
+document.firstElementChild.firstElementChild
+document.firstElementChild.lastElementChild
+document.firstElementChild.lastElementChild.firstElementChild
+var heading=document.firstElementChild.lastElementChild.firstElementChild
+heading.innerHTML="Good Bye";
+
+//fabonacci
+function fabonacci(n){
+var output=[];
+if(n==1){
+output=[0];
+}else if(n==2){
+output=[0,1];
+}else{
+output=[0,1];
+for(var x=3;x<=n;x++){
+output.push(output[output.length-2]+output[output.length-1]);
+}
+}
+return output;
+}
+console.log(fabonacci(1));
+
+// basic structure
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 id="title">DOM</h1>
+    <input type="checkbox" name="" value="">
+    <button type="button" class="btn" name="button"> click me</button>
+    <ul id="list">
+      <li class="item"><a href="https://www.google.com">Google</a></li>
+      <li class="item">second</li>
+      <li class="item">third</li>
+    </ul>
+  </body>
+</html>
+
+document.getElementsByTagName("h1");
+document.querySelector("h1");
+document.getElementById("title");
+
+heading.innerHTML="Good Bye";
+heading.style.color="red";
+heading.style.fontSize="3rem";
+document.querySelector("h1").innerHTML;
+document.querySelector(".btn");
+document.getElementsByClassName("btn");
+document.querySelector("button");
+document.querySelector("input").click();
+document.querySelector(".btn");
+document.querySelector("li");
+document.querySelector("li a");
+document.querySelector("li.item");
+document.querySelector("ul a");
+document.querySelector("#list a");
+document.querySelectorAll("li");
+document.querySelectorAll("li")[1];
+document.querySelectorAll("li")[1].style.color="yellow";
+document.querySelectorAll("li")[2].style.color="green";
+document.querySelectorAll(".btn").style.color="red"; // error
+document.querySelectorAll(".btn")[0].style.color="red";
+document.querySelector("li a").attributes;
+document.querySelector("li a").getAttribute("href");
+document.querySelector("li a").setAttribute("href","https://www.youtube.com");
+document.querySelector("button").classList;
+document.querySelector("button").classList.add("invisible");
+document.querySelector("button").classList.remove("invisible");
+document.querySelector("button").classList.toggle("invisible");
+document.querySelector("h1").textContent;
+document.querySelector("h1").innerHTML="<em>good bye</em>";
+document.querySelector("h1").textContent="<em>good bye</em>";
+
+
+
